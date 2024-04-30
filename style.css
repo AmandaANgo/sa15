@@ -1,0 +1,109 @@
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff6a7;
+}
+
+/* Navbar styles */
+nav {
+    background-color: #008d8d;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Welcome section styles */
+.welcome {
+    text-align: center;
+    padding: 50px;
+}
+
+.about {
+    text-align: center;
+    padding: 50px;
+}
+
+.contact {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Gallery styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items at the top vertically */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gallery-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+.filter-buttons {
+    align-items: center;
+    display: flex-box;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+
+.filter-buttons button {
+    background-color: #008d8d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.filter-buttons button:hover {
+    color: #558e4d;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #008d8d;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+}
